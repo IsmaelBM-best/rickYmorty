@@ -8,29 +8,42 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 @media (min-width: 320px) {
+.rick {
+    top: 10px;
+    width: 180px;
+    position: fixed;
+    z-index: 99;
+    margin-left: 330px;
+}
 form {
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
-    gap: 20px;
-    justify-content: center;
     align-items: center;
-    background-image: url(https://i.blogs.es/8c50c2/rick-morty/840_560.jpeg);
-    background-size: 100% 150%;
+    background-image: linear-gradient( rgb(34, 255, 34, 0.9) ,rgba(58, 197, 252, 0.9));
     position: relative;
     top: 0;
     position: sticky;
     z-index: 30;
 }
 input {
-    color: white;
     font-size: 16px;
-    background-color: rgba(88, 255, 37, 0.781);
+    background-color: white;
     margin-top: 20px;
     border: none;
     border-radius: 10px;
     height: 29px;
+    margin-left: 10px;
 }
+.button_search {
+    background-color: rgb(21, 255, 40);
+}
+.button_search:hover {
+    background-color: rgb(43, 199, 29);
+}
+.button_search:active {
+    font-size: 12px;
+} 
 .elements_container {
     position: relative;
     z-index: 10;
@@ -43,7 +56,7 @@ input {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    background-color: rgba(65, 255, 48, 0.397);
+    background-color: rgba(0, 255, 21, 0.521);
     font-size: 10px;
 }
 .elements_container .info_container {
@@ -62,7 +75,7 @@ input {
     border-radius: 10px;
     transition: border-radius 0.5s ease-out, width 0.5s ease-out, height 0.3s ease-out, bottom 0.4s ease-out, right 0.4s ease-out;
 }
-.elements_container img:active {
+.elements_container img:hover {
     border-radius: 50%;
     width: 180px;
     height: 180px;
@@ -71,20 +84,16 @@ input {
 }
 .location_container {
     display: flex;
-    color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 70px;
-    background-color: rgba(61, 61, 61, 0.699);
+    height: 100px;
+    background-image: linear-gradient(rgb(58, 197, 252), rgb(34, 255, 34));
     margin-top: 30px;
-    font-size: 13px;
+    font-size: 15px;
     border: 1px solid rgb(21, 255, 40) 80%;
     box-shadow: 0 2px 30px 2px rgb(8, 255, 8);
-}
-.location_container h2 {
-    color: white;
 }
 .location_container li {
     list-style: none;
@@ -106,7 +115,11 @@ input {
     padding-top: 40px;
 }
 }
-@media (min-width: 630px) {
+@media (min-width: 650px) {
+    .rick {
+        width: 155px;
+        margin-left: 450px;
+    }
     .section_container {
         display: grid;
         grid-template-columns: auto auto;
@@ -117,13 +130,13 @@ input {
         box-shadow: 0 1px 25px 2px rgb(29, 255, 41);
     }
     form {
-        background-size: 100% 150%;
-        height: 90px;
+        height: 130px;
     }
     input {
         font-size: 14px;
         height: 30px;
         margin-bottom: 30px;
+        margin-left: 20px;
     }
     .elements_container {
         width: 300px;
@@ -152,27 +165,30 @@ input {
         right: 30px;
 }
 }
-@media (min-width: 1000px) {
-    form {
-        background-size: 100% 150%;
+@media (min-width: 990px) {
+    .rick {
+        width: 155px;
+        margin-left: 700px;
     }
     .section_container {
         grid-template-columns: auto auto auto;
     }
 }
-
 @media (min-width: 1250px) {
+    .rick {
+        width: 141px;
+        margin-left: 900px;
+    }
     .section_container {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto;
     }
     .location_container {
-        height: 60px;
+        height: 100px;
         display: flex;
         box-shadow: 0 2px 20px 2px rgb(43, 199, 29);
     }
     form {
-        background-size: 100% 150%;
-        height: 90px;
+        height: 120px;
     }
     input {
         font-size: 14px;

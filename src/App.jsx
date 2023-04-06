@@ -40,6 +40,11 @@ const App = () => {
   }, []);
   return (
     <div className="">
+      <img
+        className="rick"
+        src="https://assets.stickpng.com/images/58f37731a4fa116215a92411.png"
+        alt=""
+      />
       <form onSubmit={handlerSubmit}>
         <input
           type="search"
@@ -48,7 +53,7 @@ const App = () => {
           onChange={idLocationHandlerChange}
           placeholder="Type a number"
         />
-        <input type="submit" value="Search" />
+        <input className="button_search" type="submit" value="Search" />
       </form>
       {locationInfo && <Location {...locationInfo} />}
       {locationInfo && <ResidentList residents={locationInfo.residents} />}
